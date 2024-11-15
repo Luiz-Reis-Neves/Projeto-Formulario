@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale">
+    <title>Cadastro de Veiculos</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <script src="./JS/index.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+
+        <!-- LOGO 7°BPE -->
+        <img src="/IMG//BRASÃO_7°BPE_RGB.png" alt="">
+        
+        <!-- TITULO 7°BPE DO HEADER -->
+        <div class="container-BPE">
+            <h1>7° Batalhão de Polícia do Exército</h1>
+            <span>Batalhão Cidade de Manaus</span>
+        </div>
+
+    </header><!-- HEADER - FIM -->
+
+    <!-- FORM -->
+
+    <form action=""><!-- FORM - INICIO-->
+
+        <fieldset><!-- FIELDSET - INICIO-->
+            
+            <div class="nome-do-formulario">
+                <h1>Ficha de Cadastro Interno de Veículos do 7°BPE</h1>
+            </div>
+
+            <div class="container-dados-pessoal">
+                
+                <div class="container-titulo-dados-pessoas">
+                    <h2>Dados do Militar</h2>
+                </div>
+
+                <div class="container-input-nome-guerra">
+                    
+                    <div class="container-input-nome">
+                        <span>Nome Completo</span>
+                        <br>
+                        <input type="text" name="" id=""  placeholder="Ex: Luiz Guilherme Reis Neves" required>
+                    </div>
+
+                    <div class="container-input-guerra">
+                        <span>Nome de Guerra</span>
+                        <br>
+                        <input type="text" name="" id="" placeholder="Ex: Neves" required>
+                    </div>
+                    
+                </div><!-- CONTAINER-INPUT-NOME-GUERRA - FIM -->
+
+                <div class="container-input-idt-grad-tel">
+
+                    <div class="container-input-idt">
+                        <span>Identidade Militar</span>
+                        <br>
+                        <input type="text" name="" id="" placeholder="Ex: 1020304050" required>
+                    </div>
+
+                    <div class="container-select-grad">
+                        <select name="" id="">
+                            <option value="" disabled selected>Graduação</option>
+                            <option value="">Sd EV</option>
+                            <option value="">Sd EP</option>
+                            <option value="">Cb EP</option>
+                            <option value="">3°Sgt</option>
+                            <option value="">2°Sgt</option>
+                            <option value="">1°Sgt</option>
+                            <option value="">ST</option>
+                            <option value="">Asp</option>
+                            <option value="">2°Ten</option>
+                            <option value="">1°Ten</option>
+                            <option value="">Cap</option>
+                            <option value="">Maj</option>
+                            <option value="">TC</option>
+                            <option value="">Cel</option>
+                        </select>
+                    </div>
+
+                    <div class="container-input-tel">
+                        <span>Telefone</span>
+                        <br>
+                        <input type="text" name="" id="" placeholder="Ex: (92 9 1234-5678)" required>
+                    </div>
+
+                </div>
+
+            </div><!-- CONTAINER-DADOS-PESSOAL - FIM -->
+
+
+
+            <div class="container-dados-CNH">
+                
+                <h2>Dados da CNH do Militar</h2>
+
+                <div class="container-val-cat-re">
+                    
+                    <div class="container-val">
+                        <span>Validade</span>
+                        <br>
+                        <input type="text" name="" id="" placeholder="Ex: 15/02/2034" required>
+                    </div>
+
+                    <div class="container-cat">
+                        <span>Cat HAB</span>
+                        <br>
+                        <input type="text" name="" id="" placeholder="Ex: AB" required>
+                    </div>
+
+                    <div class="container-re">
+                        <span>N° Registro</span>
+                        <br>
+                        <input type="text" name="" id="" placeholder="Ex: 8139729340" required>
+                    </div>
+                    
+                </div><!-- CONTAINER-VAL-CAT-RE - FIM -->
+
+                <span>CNH Válida do Militar (FOTO ou PDF)</span>
+                
+                <div class="container-cnh">
+
+                    <div class="container-documento">
+                    
+                        <div>
+                            <img id="image-preview" class="image-preview" src="https://via.placeholder.com/300x200?text=Escolha+uma+imagem" alt="Pré-visualização da imagem" />
+                        </div>
+
+                        <div class="file-info" id="file-info">Nenhum arquivo selecionado</div>
+
+                        <div class="file-upload">
+                            <label for="file-upload" class="file-upload-label">Escolher Arquivo</label>
+                            <input type="file" id="file-upload" class="file-upload-input" accept="application/pdf, image/*" />
+                        </div>
+
+                    </div>
+
+                    <div class="box-aviso">
+                        <img src="/IMG/atencao.png" alt="">
+                        <p>Nomear o arquivo com o P/G nome de guerra <br> Ex: SD EP Neves.pdf</p>
+                    </div>
+
+                </div>
+
+            </div><!-- CONTAINER-DADOS-CNH - FIM -->
+
+            
+              
+            
+
+
+        </fieldset><!-- FIELDSET - FIM -->
+
+    </form><!-- FORM - FIM-->
+
+</body>
+</html>
